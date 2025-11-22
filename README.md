@@ -1,38 +1,41 @@
 # Smart India Hackathon Workshop
-# Date: 08-10-2025
+# Date: 10/22/2025
 ## Reference Number: 212224230040
 ## Name: B.Khaja Rasool
 ## Problem Title
-SIH 25006: Development of a Digital Farm Management Portal for implementing Biosecurity measures in Pig and Poultry Farms
+SIH 25006: Development of a Digital Farm Management Portal for Implementing Biosecurity Measures in Pig and Poultry Farms
 ## Problem Description
 ### Background
 
-Biosecurity is a cornerstone of animal health management, particularly in the pig and poultry sectors, where disease outbreaks such as Avian Influenza and African Swine Fever can cause significant economic losses, threaten food security, and disrupt rural livelihoods. Despite its importance, many farmers—especially smallholders in resource-limited areas—struggle to access practical, actionable information on biosecurity protocols, risk assessment tools, and regulatory compliance requirements.
+Biosecurity is a cornerstone of animal health management, particularly in the pig and poultry sectors, where disease outbreaks such as Avian Influenza (AI) and African Swine Fever (ASF) can cause severe economic losses, threaten food security, and disrupt rural livelihoods.
+
+Despite its importance, many farmers—especially smallholders in resource-limited regions—struggle to access practical, actionable information on biosecurity protocols, risk assessment tools, and regulatory compliance requirements.
 
 ### Problem Description
 
-There is an urgent need for a user-friendly, digital platform that empowers farmers to implement, monitor, and sustain robust biosecurity practices on their farms. This portal should offer end-to-end solutions for farm-level biosecurity management by integrating:
+There is an urgent need for a user-friendly, digital platform that empowers farmers to implement, monitor, and sustain robust biosecurity practices on their farms.
 
-• Customizable risk assessment tools based on local epidemiological conditions.
-• Interactive training modules and best practice guidelines tailored for pig and poultry production systems.
-• Compliance tracking features aligned with regulatory frameworks to help farmers work toward disease-free compartment recognition.
-• Real-time alerts and monitoring dashboards for disease outbreaks and biosecurity breaches.
-• Multilingual and mobile-first design to ensure accessibility in remote and rural areas.
+The portal must provide end-to-end solutions for farm-level biosecurity management by integrating:
+Customizable risk assessment tools based on local epidemiological conditions
+Interactive training modules and best-practice guidelines customized for pig and poultry farms
+Compliance tracking features aligned with regulatory frameworks to help farmers progress toward disease-free compartment recognition
+Real-time alerts and monitoring dashboards for disease outbreaks and potential biosecurity breaches
+Multilingual and mobile-first design for accessibility in rural and remote regions
 
-The platform should also enable data collection and analysis for policy support, foster collaborative networking among stakeholders (farmers, veterinarians, extension workers, etc.), and promote long-term resilience and sustainability in the livestock sector.
+Additionally, the platform should support data collection and analytics for policy development, enable collaboration among farmers, veterinarians, and extension workers, and strengthen long-term biosecurity resilience in the livestock sector.
 
 ### Expected Outcomes
 
-• Enhanced farmer awareness and education on biosecurity.
-• Improved risk management at the farm level as well as self-assessment.
-• Easy access to customized biosecurity protocols and guidelines.
-• Digital record-keeping and compliance tracking.
-• Timely alerts and disease notifications to farmers.
-• Healthier livestock and increased farm productivity.
-• Empowerment of small and marginal farmers with limited resources.
-• Support to authorities in data-driven surveillance and policy making.
-• Stronger collaboration across the livestock ecosystem.
-• Improved national preparedness for zoonotic and transboundary diseases.
+1)  Enhanced farmer awareness and education about biosecurity
+2)  Improved farm-level risk management and self-assessment
+3)  Easy access to customized, practical biosecurity guidelines
+4)  Digital compliance tracking and record maintenance
+5)  Timely alerts and disease notifications
+6)  Healthier livestock and increased productivity
+7)  Empowerment of small and marginal farmers with limited resources
+8)  Better support for authorities through data-driven disease surveillance
+9)  Stronger collaboration across the livestock ecosystem
+10) Improved national preparedness for zoonotic and transboundary diseases
 
 ## Problem Creater's Organization
 Ministry of Fisheries, Animal Husbandry & Dairying
@@ -41,16 +44,63 @@ Ministry of Fisheries, Animal Husbandry & Dairying
 Department of Animal Husbandry & Dairying (DoAH&D)
 
 ## Proposed Solution
-A Digital Farm Management Portal (web + mobile) designed to enforce and monitor biosecurity in pig and poultry farms. It digitizes daily operations such as hygiene checks, visitor control, and animal health monitoring. The system offers QR-based visitor registration, risk-based access control, SOP management, and real-time alerts. Farmers can track batches, mortality, and environmental conditions. IoT sensors (temperature, humidity, door sensors, footbath counters) provide continuous monitoring. The portal also includes staff training, incident reporting, and compliance dashboards. Overall, it creates a centralized biosecurity ecosystem that reduces disease risk and ensures traceability.
+We propose a low-cost, modular, AI-Enabled Track Monitoring System:
+1) Which is a fully indigenous, Make-in-India track monitoring system built with local sensors and opensource software to reduce foreign dependency.
+2) It delivers real-time precision, recording chainage data every 25 cm with ±2 mm accuracy for gauge,
+   alignment, unevenness, rail wear, and sleeper health.
+3} A multi-sensor approach enhances accuracy e.g: gauge is measured using both ToF sensors and
+   stereo vision cameras, with similar redundancy applied across other parameters.
+4) The system is battery-powered, ensuring portability and reliable use even in remote areas.
+5) Its modular design supports easy upgrades from demo tracks to trains running at 200 km/h—by
+   integrating industrial-grade sensors.
+6) For validation, it includes multi-angle video capture to visually confirm detected defects.
+7) With Edge AI processing, it fuses data, filters noise, detects defects instantly, and supports cloudready storage.
+8) Finally, its open and customizable architecture ensures adaptability for the evolving needs of Indian
+   Railways.
 
 ## Technical Approach
-Built as a cloud-based system using a web frontend (React/Angular) and a mobile app (Flutter/React Native). Backend runs on scalable APIs (Node.js/Python) connected to PostgreSQL for data and optional InfluxDB for sensor streams. IoT gateways push sensor data via MQTT. The system supports role-based authentication and encrypted data transfer. Offline functionality allows checklist completion without network. Dashboards use analytics and simple ML-based anomaly detection. QR codes enable visitor tracking and digital permits. APIs allow future integration with govt. disease reporting systems.
+
+<img width="1488" height="607" alt="image" src="https://github.com/user-attachments/assets/22d1493a-abb0-418b-8d82-599a6a799e1f" />
+
 
 ## Feasibility and Viability
-Technically feasible as it uses proven technologies (cloud apps, IoT, QR systems). Operationally practical for small to large farms with minimal training. Low-cost mobile devices are sufficient for usage. Economically viable as reduced disease outbreaks increase farmer profit and reduce treatment costs. Sensors used are affordable and widely available. Can run on low bandwidth and offline mode. Scalable for government/industry adoption. Data privacy ensured through secure architecture. Long-term sustainability through subscription or government-supported deployment.
+1) Low-cost prototype → easily achievable with off-the-shelf components.
+2) Scalable design → prototype → real-time high-speed TRC system for Indian Railways.
+3) Technical expertise available through open-source libraries, AI models, and
+  low-cost computing boards (e.g. Nvidia Jetson Nano, Raspberry Pi)
 
 ## Impact and Benefits
-Reduces disease outbreaks through early detection and strict biosecurity compliance. Allows farmers to track hygiene tasks, visitor movement, and environmental conditions. Improves farm productivity and lowers mortality rates. Saves costs by reducing antibiotic use and emergency treatments. Enables faster response during outbreaks with digital incident logs and contact tracing. Helps authorities with real-time surveillance and reporting. Enhances traceability, improving market access. Simplifies audits and certification. Increases farm staff awareness through built-in training modules.
-
+## Impact:
+Safety First: Early detection of track issues → prevents accidents,
+saving lives.
+Operational Efficiency: Less downtime for inspections → smoother
+railway operations.
+Indigenous Solution: Reduces dependence on costly foreign technology
+## Benefits:
+# Economic
+       80% cost savings compared to imported TRCs.
+       Reduces maintenance costs by predictive monitoring.
+# Social
+       Safer travel experience for millions of passengers.
+       Supports Make-in-India and Digital India initiatives.
+# Environmental
+       Timely repairs → fewer derailments → less environmental damage.
+       Energy-efficient system → low carbon footprint.
 ## Research and References
-Designed using best practices from FAO and WOAH (OIE) biosecurity guidelines. Based on research papers on biosecurity effectiveness in pig and poultry farms. Refers to studies on IoT in livestock monitoring and digital farm management systems. Uses government manuals and SOPs for disease prevention (AI, ASF, etc.). Influenced by case studies on outbreak reduction through digital traceability. Supported by academic literature on precision livestock farming, sensor integration, and data-driven biosecurity.
+1.Track Monitoring in Indian Railways
+
+– March 2013 INDIAN RAILWAY INSTITUTE OF CIVIL ENGINEERING PUNE 411001
+https://iricen.gov.in/iricen/books_jquery/track_monitoring.pdf
+
+2.Introduction of Modern Track Inspection Technology in Indian Railways
+
+– Integrated Track Monitoring System (ITMS)
+
+– New TRC Rahul Singh1 , Saroj Kumar Barnwal
+
+https://www.iricen.gov.in/iricen/ipwe_seminar/2017/Nov%202023%20Vol-1/Introduction%20of%20Modern%20Track%20Inspection%20Technology.pdf
+
+3.Condition monitoring of railway tracks using compact size on- board monitoring
+device:
+
+https://ieeexplore.ieee.org/document/7105041

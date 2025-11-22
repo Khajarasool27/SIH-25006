@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Reference Number:
-## Name:
+# Date: 08-10-2025
+## Reference Number: 212224230040
+## Name: B.Khaja Rasool
 ## Problem Title
 SIH 25006: Development of a Digital Farm Management Portal for implementing Biosecurity measures in Pig and Poultry Farms
 ## Problem Description
@@ -41,27 +41,16 @@ Ministry of Fisheries, Animal Husbandry & Dairying
 Department of Animal Husbandry & Dairying (DoAH&D)
 
 ## Proposed Solution
-Remove These Lines
-1. Detailed explanation of the proposed solution
-2. How it addresses the problem
-3. Innovation and uniqueness of the solution
+A Digital Farm Management Portal (web + mobile) designed to enforce and monitor biosecurity in pig and poultry farms. It digitizes daily operations such as hygiene checks, visitor control, and animal health monitoring. The system offers QR-based visitor registration, risk-based access control, SOP management, and real-time alerts. Farmers can track batches, mortality, and environmental conditions. IoT sensors (temperature, humidity, door sensors, footbath counters) provide continuous monitoring. The portal also includes staff training, incident reporting, and compliance dashboards. Overall, it creates a centralized biosecurity ecosystem that reduces disease risk and ensures traceability.
 
 ## Technical Approach
-Remove These Lines
-1. Technologies to be used (e.g. programming languages, frameworks, hardware)
-2. Methodology and process for implementation <b>(Flow Charts/Images/ working prototype)</b>
+Built as a cloud-based system using a web frontend (React/Angular) and a mobile app (Flutter/React Native). Backend runs on scalable APIs (Node.js/Python) connected to PostgreSQL for data and optional InfluxDB for sensor streams. IoT gateways push sensor data via MQTT. The system supports role-based authentication and encrypted data transfer. Offline functionality allows checklist completion without network. Dashboards use analytics and simple ML-based anomaly detection. QR codes enable visitor tracking and digital permits. APIs allow future integration with govt. disease reporting systems.
 
 ## Feasibility and Viability
-Remove These Lines
-1. Analysis of the feasibility of the idea
-2. Potential challenges and risks
-3. Strategies for overcoming these challenges
+Technically feasible as it uses proven technologies (cloud apps, IoT, QR systems). Operationally practical for small to large farms with minimal training. Low-cost mobile devices are sufficient for usage. Economically viable as reduced disease outbreaks increase farmer profit and reduce treatment costs. Sensors used are affordable and widely available. Can run on low bandwidth and offline mode. Scalable for government/industry adoption. Data privacy ensured through secure architecture. Long-term sustainability through subscription or government-supported deployment.
 
 ## Impact and Benefits
-Remove These Lines
-1. Potential impact on the target audience
-2. Benefits of the solution (social, economic, environmental, etc.)
+Reduces disease outbreaks through early detection and strict biosecurity compliance. Allows farmers to track hygiene tasks, visitor movement, and environmental conditions. Improves farm productivity and lowers mortality rates. Saves costs by reducing antibiotic use and emergency treatments. Enables faster response during outbreaks with digital incident logs and contact tracing. Helps authorities with real-time surveillance and reporting. Enhances traceability, improving market access. Simplifies audits and certification. Increases farm staff awareness through built-in training modules.
 
 ## Research and References
-Remove These Lines
-1. Details / Links of the reference and research work
+Designed using best practices from FAO and WOAH (OIE) biosecurity guidelines. Based on research papers on biosecurity effectiveness in pig and poultry farms. Refers to studies on IoT in livestock monitoring and digital farm management systems. Uses government manuals and SOPs for disease prevention (AI, ASF, etc.). Influenced by case studies on outbreak reduction through digital traceability. Supported by academic literature on precision livestock farming, sensor integration, and data-driven biosecurity.
